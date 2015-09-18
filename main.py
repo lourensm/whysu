@@ -1,6 +1,6 @@
 import sys
 
-mylist = [
+mylist1 = [
             [0,0,0,0,0,6,0,0,0],
             [7,8,0,0,4,0,0,0,0],
             [0,0,1,0,3,5,0,0,0],
@@ -12,6 +12,19 @@ mylist = [
     [0,0,0,0,0,0,0,0,0]
          ]
 
+mylist2 = [
+    [0,0,0,0,0,0,0,6,0],
+    [0,0,0,0,0,0,0,0,0],
+    [1,8,2,0,9,0,0,4,0],
+    [0,0,9,0,4,0,0,5,0],
+    [0,0,7,0,1,0,0,9,0],
+    [0,0,0,7,6,0,0,0,0],
+    [0,0,0,0,0,4,2,0,1],
+    [0,0,3,0,0,0,0,8,0],
+    [0,0,0,0,2,0,0,3,0]
+    ]
+
+mylist = mylist2
 """attempt at deep copy of mylist
 sudoarray = [[]]*9
 for col in range(0,9):
@@ -25,7 +38,10 @@ sudoarray = deepcopy(mylist)
 
 
 """
-Program solves at least one sudoku puzzle.
+Program solves at least one sudoku puzzle(mylist1).
+Latest:
+TODO:Found a sudoku that my algorithm doesn't solve(mylist2). 
+Earlier:
 Sudoku variant with additional constraints of 4  3x3 squares.
 
 Inspired by recent publicity on Singapore Prime Minister Lee Hsien Loong.
